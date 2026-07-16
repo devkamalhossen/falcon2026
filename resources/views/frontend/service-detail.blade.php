@@ -210,7 +210,7 @@
 
 
     <!-- start of pricing area devkamalhossen  -->
-    <section class="devkamal-pricing-wrapper">
+    {{--<section class="devkamal-pricing-wrapper">
         <div class="devkamal-pricing-header">
             <h2 class="text-2xl mb-12 md:text-3xl lg:text-4xl text-center uppercase font-bold tracking-widest lg:tracking-[10px]">PU FLOORING PRICING</h2>
             <p class="ql-size-large" style="margin: 0px 150px 0px 150px;">Indicative starting rates per square foot for Bangladesh projects. Final pricing depends on substrate condition, coating thickness, and site access — request a free site visit for an exact quote.</p>
@@ -262,7 +262,7 @@
                 <a href="#" class="devkamal-btn-outline">Get Quote</a>
                 </div>
             </div>
-    </section>
+    </section>--}}
     <!-- end of pricing area devkamalhossen  -->
 
     <!-- usageAreas Start -->

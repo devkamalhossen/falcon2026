@@ -217,59 +217,7 @@
 
 
     <!-- start of pricing area devkamalhossen  -->
-    <section class="devkamal-pricing-wrapper">
-        <div class="devkamal-pricing-header">
-            <h2 class="text-2xl mb-12 md:text-3xl lg:text-4xl text-center uppercase font-bold tracking-widest lg:tracking-[10px]">PU FLOORING PRICING</h2>
-            <p class="ql-size-large" style="margin: 0px 150px 0px 150px;">Indicative starting rates per square foot for Bangladesh projects. Final pricing depends on substrate condition, coating thickness, and site access — request a free site visit for an exact quote.</p>
-        </div>
-
-        <div class="devkamal-pricing-grid">
-            <!-- Basic Plan -->
-            <div class="devkamal-card">
-            <h3>Basic PU Coating</h3>
-            <p class="devkamal-price">৳180<span>-220</span></p>
-            <small>per sq.ft (starting)</small>
-            <ul class="devkamal-features">
-                <li>✓ 2-coat PU system</li>
-                <li>✓ Basic slip resistance</li>
-                <li>✓ Single color finish</li>
-                <li>✓ 1-year workmanship warranty</li>
-            </ul>
-            <a href="#" class="devkamal-btn-outline">Get Quote</a>
-            </div>
-
-            <!-- Standard Plan (Most Popular) -->
-            <div class="devkamal-card devkamal-popular">
-            <div class="devkamal-badge">MOST POPULAR</div>
-            <h3>Standard PU Flooring</h3>
-            <p class="devkamal-price">৳280<span>-350</span></p>
-            <small>per sq.ft (starting)</small>
-            <ul class="devkamal-features">
-                <li>✓ 3-coat PU system with primer</li>
-                <li>✓ Chemical & impact resistant</li>
-                <li>✓ Seamless, hygienic finish</li>
-                <li>✓ Slip-resistant texture option</li>
-                <li>✓ 3-year workmanship warranty</li>
-            </ul>
-            <a href="#" class="devkamal-btn-solid">Get Quote</a>
-            </div>
-
-            <!-- Premium Plan -->
-            <div class="devkamal-card">
-            <h3>Premium PU System</h3>
-                <p class="devkamal-price">৳400<span>+</span></p>
-                <small>per sq.ft (starting)</small>
-                <ul class="devkamal-features">
-                    <li>✓ Multi-layer PU with anti-bacterial additive</li>
-                    <li>✓ Thermal-shock & extreme chemical resistance</li>
-                    <li>✓ Custom color & coving detail</li>
-                    <li>✓ Full substrate preparation included</li>
-                    <li>✓ 5-year workmanship warranty</li>
-                </ul>
-                <a href="#" class="devkamal-btn-outline">Get Quote</a>
-                </div>
-            </div>
-    </section>
+    
     <!-- end of pricing area devkamalhossen  -->
 
     <!-- usageAreas Start -->

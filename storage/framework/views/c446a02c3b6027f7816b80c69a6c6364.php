@@ -1,0 +1,40 @@
+<?php $__env->startSection('page_title', 'Our Products'); ?>
+<?php $__env->startSection('meta_data'); ?>
+    <meta name="title" content="Our Product - Falcon Solution Limited" />
+    <meta name="description" content="Browse premium construction chemicals, industrial flooring materials, epoxy coatings, waterproofing solutions, and surface protection products offered by Falcon Solution Limited for residential, commercial, and industrial projects."
+ />
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('main'); ?>
+    <section class="py-12 md:py-20 lg:py-24">
+        <div class="container relative space-y-20">
+            <h1 class="mb-0 text-4xl md:text-5xl lg:text-6xl xl:text-[96px] text-dark font-medium uppercase animate__animated animate__fadeInUp">
+                Product List
+            </h1>
+            <h2 class="text-xl font-normal">Browse premium construction chemicals, industrial flooring materials, epoxy coatings, waterproofing solutions, and surface protection products offered by Falcon Solution Limited for residential, commercial, and industrial projects.</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-14">
+                <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <div
+                        class="group p-8 relative z-[1] overflow-hidden after:absolute after:inset-0 after:bg-black/60 after:size-full after:z-[-1] after:duration-300 hover:after:bg-black/70" data-aos="fade-up">
+                        <img  loading="lazy" src="<?php echo e(asset($category->image)); ?>" alt="Falcon Solution Limited"
+                            class="absolute size-full object-cover inset-0 z-[-2] duration-300 group-hover:scale-105">
+                        <div class="pb-2 border-b border-b-white/10">
+                            <h3 class="text-2xl font-semibold text-primary"><?php echo e($category->name); ?></h3>
+                        </div>
+                        <ul class="flex-col flex gap-1.5 text-white pt-3">
+                            <?php $__currentLoopData = $category?->products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <a target="<?php echo e($product->datasheet ? '_blank' : ''); ?>" href="<?php echo e($product->datasheet ? asset($product->datasheet) : 'javascript:void(0)'); ?>" class="flex items-center gap-2 hover:text-primary" data-aos="fade-up">
+                                    <?php echo config('icon.chevronRight'); ?>
+
+                                    <?php echo e($product->name); ?>
+
+                                </a>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </ul>
+                    </div>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            </div>
+        </div>
+    </section>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('frontend.master', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\falcon2026\resources\views/frontend/product-list.blade.php ENDPATH**/ ?>
