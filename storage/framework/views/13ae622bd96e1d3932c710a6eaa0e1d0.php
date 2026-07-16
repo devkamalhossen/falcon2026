@@ -87,7 +87,7 @@
     <!-- start of quote section devkamal -->
     <section class="quote-section">
         <div class="quote-content">
-            <h2>Get a PU Flooring Quote Today</h2>
+            <h2>Get a  <?php echo e($data['service']?->title); ?></h2>
             <p>Talk to our flooring engineer — same-day response, no obligation.</p>
         </div>
         <div class="quote-buttons">
@@ -394,7 +394,7 @@
             
             <div class="devkamal-text">
             <small>FREE DOWNLOAD</small>
-            <h2>Get the Free Flooring Cost Calculator (PDF)</h2>
+            <h2>Get the Free <?php echo e($data['service']?->title); ?> Cost Calculator (PDF)</h2>
             <p>Estimate your project cost in minutes — enter your area and application, and the calculator walks you through expected PU flooring pricing tiers for Bangladesh sites.</p>
             </div>
             

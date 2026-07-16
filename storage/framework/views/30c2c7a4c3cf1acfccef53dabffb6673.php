@@ -6,7 +6,7 @@
             <a class="nav-link <?php echo e(request()->routeIs('admin.dashboard') ? ' active' : 'collapsed'); ?>"
                 href="<?php echo e(route('admin.dashboard')); ?>">
                 <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
+                <span>Dashboard asdfas</span>
             </a>
         </li>
         <?php

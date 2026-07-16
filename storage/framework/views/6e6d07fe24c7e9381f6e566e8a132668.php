@@ -29,7 +29,7 @@
                                     <div class="col-6 col-lg-6 col-md-6">
                                        
                                         <div class="mb-2">
-                                            <label for="title" class="form-label">Title</label>
+                                            <label for="title" class="form-label">Title asdfaf</label>
                                             <input type="text" name="title" placeholder="Title"
                                                 class="form-control <?php $__errorArgs = ['title'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
