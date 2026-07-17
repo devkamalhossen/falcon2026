@@ -243,6 +243,14 @@
             <ul id="cms-nav" class="nav-content collapse {{ $isActive }}" data-bs-parent="#sidebar-nav">
 
                 <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('view_case_study') ? 'active' : 'collapsed' }}"
+                        href="{{ route('view_case_study') }}">
+                        <i class="bi bi-grid"></i>
+                        <span>CaseStudy Manage</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('home.intro') ? 'active' : 'collapsed' }}"
                         href="{{ route('home.intro') }}">
                         <i class="bi bi-grid"></i>

@@ -9,6 +9,8 @@ use App\Http\Requests\Backend\GeneralSettingInformationRequest;
 use App\Http\Requests\Backend\GeneralSettingMailSetupRequest;
 use App\Http\Requests\Backend\GeneralSettingMetaSEORequest;
 use App\Services\Backend\Setting\GeneralSettingService;
+use Illuminate\Http\Request;
+use App\Models\CaseStudy;
 use Exception;
 
 class GeneralSettingController extends Controller
@@ -88,4 +90,75 @@ class GeneralSettingController extends Controller
             return abort($e->getCode());
         }
     }
+
+
+    // start of case study from here 
+    public function viewCaseStudy()
+    {
+        $pageData = CaseStudy::first(); 
+        $caseStudies = CaseStudy::all();
+        return view('admin.casestudy.case-study', compact('pageData', 'caseStudies'));
+    }
+
+    public function StoreCaseStudy(Request $request)
+    {
+       $request->validate([
+            'header'   => 'required|string|max:255',
+            'title'    => 'required|string|max:255',
+            'area'     => 'nullable|string',
+            'industry' => 'nullable|string',
+            'solution' => 'nullable|string',
+            'timeline' => 'nullable|string',
+            'outcome'  => 'nullable|string',
+        ]);
+
+        CaseStudy::create($request->all());
+
+        return redirect()->back()->with('success', 'Case Study created successfully!');
+    }
+
+    public function editCaseStudy($id)
+    {
+        $updateData = CaseStudy::findOrFail($id);
+        return view('admin.casestudy.edit_case_study', compact('updateData'));
+    }
+
+    public function updateCaseStudy(Request $request, $id)
+    {
+        $request->validate([
+            'header'   => 'required|string|max:255',
+            'title'    => 'required|string|max:255',
+            'area'     => 'nullable|string',
+            'industry' => 'nullable|string',
+            'solution' => 'nullable|string',
+            'timeline' => 'nullable|string',
+            'outcome'  => 'nullable|string',
+        ]);
+
+        $caseStudy = CaseStudy::findOrFail($id);
+
+        $caseStudy->update([
+            'header'   => $request->header,
+            'title'    => $request->title,
+            'area'     => $request->area,
+            'industry' => $request->industry,
+            'solution' => $request->solution,
+            'timeline' => $request->timeline,
+            'outcome'  => $request->outcome,
+        ]);
+
+        return redirect()->route('view_case_study')->with('success', 'Case Study updated successfully!');
+    }
+
+    public function deleteCaseStudy($id)
+    {
+        $caseStudy = CaseStudy::findOrFail($id);
+
+        $caseStudy->delete();
+
+        return redirect()->back()->with('success', 'Case Study deleted successfully!');
+    }
+
+
+
 }

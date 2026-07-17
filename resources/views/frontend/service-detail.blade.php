@@ -168,7 +168,7 @@
     <!-- start of assessment area devkamal  -->
     <section class="devkamal-assessment-wrapper">
         <div class="devkamal-assessment-container">
-            <h3 class="devkamal-title">Not sure which PU system fits your facility?</h3>
+            <h3 class="devkamal-title">Not sure which {{ $data['service']?->title }}</h3>
             <p class="devkamal-description">
             Our engineers assess your floor's load, chemical exposure, and budget — then recommend the right PU thickness and finish. No cost, no pressure.
             </p>
@@ -367,86 +367,87 @@
             <p class="devkamal-footer-text">Sample project photography for illustration — contact us for a full portfolio of completed sites.</p>
         </section>
 
+        {{-- start of case study from here  --}}
         <section class="devkamal-cs-wrapper">
-    <h2 class="devkamal-cs-title">CASE STUDIES</h2>
-    <div class="devkamal-cs-grid">
-        <!-- Case Study 1: Garment Factory -->
-        <div class="devkamal-cs-card">
-        <div class="devkamal-cs-header">Garment Factory</div>
-        <div class="devkamal-cs-body">
-            <h3>Cutting Floor Resurfacing for a Garment Factory</h3>
-            <div class="devkamal-details">
-            <span><strong>AREA:</strong> 18,000 sq.ft</span>
-            <span><strong>INDUSTRY:</strong> Garments / RMG</span>
-            <span><strong>SOLUTION:</strong> Standard PU System</span>
-            <span><strong>TIMELINE:</strong> 6 days</span>
-            </div>
-            <div class="devkamal-outcome">
-            <strong>Outcome:</strong> Eliminated dust generation on the cutting floor and reduced downtime for cleaning, with zero cracking reported after one monsoon season.
-            </div>
-        </div>
-        </div>
-
-        <!-- Case Study 2: Cold Storage -->
-        <div class="devkamal-cs-card">
-        <div class="devkamal-cs-header">Cold Storage</div>
-        <div class="devkamal-cs-body">
-            <h3>Thermal-Shock Flooring for a Cold Storage Warehouse</h3>
-            <div class="devkamal-details">
-            <span><strong>AREA:</strong> 12,500 sq.ft</span>
-            <span><strong>INDUSTRY:</strong> Cold Storage / Logistics</span>
-            <span><strong>SOLUTION:</strong> Premium PU System</span>
-            <span><strong>TIMELINE:</strong> 9 days</span>
-            </div>
-            <div class="devkamal-outcome">
-            <strong>Outcome:</strong> Floor withstood repeated freeze-thaw cycling with no delamination, passing food-safety audit on first inspection.
-            </div>
-        </div>
-        </div>
-
-        <!-- Case Study 3: Hospital -->
-        <div class="devkamal-cs-card">
-            <div class="devkamal-cs-header">Hospital</div>
+            <h2 class="devkamal-cs-title">CASE STUDIES</h2>
+            <div class="devkamal-cs-grid">
+                <!-- Case Study 1: Garment Factory -->
+                <div class="devkamal-cs-card">
+                <div class="devkamal-cs-header">Garment Factory</div>
                 <div class="devkamal-cs-body">
-                    <h3>Anti-Bacterial Flooring for a Private Hospital</h3>
+                    <h3>Cutting Floor Resurfacing for a Garment Factory</h3>
                     <div class="devkamal-details">
-                    <span><strong>AREA:</strong> 7,200 sq.ft</span>
-                    <span><strong>INDUSTRY:</strong> Healthcare</span>
-                    <span><strong>SOLUTION:</strong> Premium PU System</span>
-                    <span><strong>TIMELINE:</strong> 5 days (phased)</span>
+                    <span><strong>AREA:</strong> 18,000 sq.ft</span>
+                    <span><strong>INDUSTRY:</strong> Garments / RMG</span>
+                    <span><strong>SOLUTION:</strong> Standard PU System</span>
+                    <span><strong>TIMELINE:</strong> 6 days</span>
                     </div>
                     <div class="devkamal-outcome">
-                    <strong>Outcome:</strong> Seamless finish helped the facility meet infection-control requirements while installation was phased to keep the corridor operational.
+                    <strong>Outcome:</strong> Eliminated dust generation on the cutting floor and reduced downtime for cleaning, with zero cracking reported after one monsoon season.
                     </div>
                 </div>
                 </div>
-            </div>
-        <p class="devkamal-cs-footer">Figures illustrative of typical project scope — request references for verified client results.</p>
-    </section>
 
-     <section class="devkamal-download-wrapper">
-        <div class="devkamal-download-content">
-            <div class="devkamal-icon">
-            <!-- SVG Download Icon -->
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
+                <!-- Case Study 2: Cold Storage -->
+                <div class="devkamal-cs-card">
+                <div class="devkamal-cs-header">Cold Storage</div>
+                <div class="devkamal-cs-body">
+                    <h3>Thermal-Shock Flooring for a Cold Storage Warehouse</h3>
+                    <div class="devkamal-details">
+                    <span><strong>AREA:</strong> 12,500 sq.ft</span>
+                    <span><strong>INDUSTRY:</strong> Cold Storage / Logistics</span>
+                    <span><strong>SOLUTION:</strong> Premium PU System</span>
+                    <span><strong>TIMELINE:</strong> 9 days</span>
+                    </div>
+                    <div class="devkamal-outcome">
+                    <strong>Outcome:</strong> Floor withstood repeated freeze-thaw cycling with no delamination, passing food-safety audit on first inspection.
+                    </div>
+                </div>
+                </div>
+
+                <!-- Case Study 3: Hospital -->
+                <div class="devkamal-cs-card">
+                    <div class="devkamal-cs-header">Hospital</div>
+                        <div class="devkamal-cs-body">
+                            <h3>Anti-Bacterial Flooring for a Private Hospital</h3>
+                            <div class="devkamal-details">
+                            <span><strong>AREA:</strong> 7,200 sq.ft</span>
+                            <span><strong>INDUSTRY:</strong> Healthcare</span>
+                            <span><strong>SOLUTION:</strong> Premium PU System</span>
+                            <span><strong>TIMELINE:</strong> 5 days (phased)</span>
+                            </div>
+                            <div class="devkamal-outcome">
+                            <strong>Outcome:</strong> Seamless finish helped the facility meet infection-control requirements while installation was phased to keep the corridor operational.
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <p class="devkamal-cs-footer">Figures illustrative of typical project scope — request references for verified client results.</p>
+        </section>
+
+        <section class="devkamal-download-wrapper">
+            <div class="devkamal-download-content">
+                <div class="devkamal-icon">
+                <!-- SVG Download Icon -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                </div>
+                
+                <div class="devkamal-text">
+                <small>FREE DOWNLOAD</small>
+                <h2>Get the Free {{ $data['service']?->title }} Cost Calculator (PDF)</h2>
+                <p>Estimate your project cost in minutes — enter your area and application, and the calculator walks you through expected PU flooring pricing tiers for Bangladesh sites.</p>
+                </div>
+                
+                <form class="devkamal-download-form">
+                <input type="email" placeholder="Your work email" required>
+                <button type="submit">Download PDF</button>
+                </form>
             </div>
-            
-            <div class="devkamal-text">
-            <small>FREE DOWNLOAD</small>
-            <h2>Get the Free {{ $data['service']?->title }} Cost Calculator (PDF)</h2>
-            <p>Estimate your project cost in minutes — enter your area and application, and the calculator walks you through expected PU flooring pricing tiers for Bangladesh sites.</p>
-            </div>
-            
-            <form class="devkamal-download-form">
-            <input type="email" placeholder="Your work email" required>
-            <button type="submit">Download PDF</button>
-            </form>
-        </div>
-    </section>
+        </section>
 
     <!-- end of three section from here devkamalhossen  -->
 

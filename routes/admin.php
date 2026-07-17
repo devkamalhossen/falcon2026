@@ -228,4 +228,15 @@ Route::middleware(['admin'])->group(function () {
         Route::get('/general-mail', [GeneralSettingController::class, 'generalMail'])->name('setting.general.mail');
         Route::put('/general-mail/update', [GeneralSettingController::class, 'updateMail'])->name('setting.general.mail.update');
     })->middleware('permissin:setting');
+
+
+    // start of case stude CRUD from here 
+     Route::controller(GeneralSettingController::class)->prefix('casestudy')->group(function(){
+        Route::get('/view','viewCaseStudy')->name('view_case_study');
+        Route::post('/store-case-study','StoreCaseStudy')->name('store_case_study');
+        Route::get('/edit-case-study/{id}','editCaseStudy')->name('edit_case_study');
+        Route::post('/update-case-study/{id}','updateCaseStudy')->name('update_case_study');
+        Route::get('/delete-case-study/{id}','deleteCaseStudy')->name('delete_case_study');
+    });
+
 });
