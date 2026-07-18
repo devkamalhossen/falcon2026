@@ -84,11 +84,22 @@ class FrontendController extends Controller
             if (!$data['service']) {
                 return throw new Exception('Not Found', 404);
             }
+
+            // কেস স্টাডিগুলো ফেচ করুন
+        $caseStudies = \App\Models\CaseStudy::all();
+
+        // ডাটা অ্যারেতে কেস স্টাডিগুলো যোগ করে দিন
+        $data['caseStudies'] = $caseStudies;
+
+        // dd($data);
+
             return view('frontend.service-detail', compact('data'));
         } catch (Exception $e) {
             return abort($e->getCode());
         }
     }
+
+
 
     public function projects(Request $request)
     {
