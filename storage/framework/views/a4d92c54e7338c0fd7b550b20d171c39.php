@@ -134,7 +134,7 @@
              $services = get_active_services();
          ?>
          <?php $__currentLoopData = $services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-             <a href="<?php echo e(route('service.detail', $service->slug)); ?>" class="menu-item"><?php echo e($service->title); ?></a>
+             <a href="<?php echo e(route('service.detail', $service->slug)); ?>" class="menu-item"><?php echo e(Str::limit($service->title, 25, '')); ?></a>
          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
      </div>

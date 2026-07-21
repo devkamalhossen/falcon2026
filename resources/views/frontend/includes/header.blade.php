@@ -130,7 +130,7 @@
              $services = get_active_services();
          @endphp
          @foreach ($services as $service)
-             <a href="{{ route('service.detail', $service->slug) }}" class="menu-item">{{ $service->title }}</a>
+             <a href="{{ route('service.detail', $service->slug) }}" class="menu-item">{{ Str::limit($service->title, 25, '') }}</a>
          @endforeach
 
      </div>
