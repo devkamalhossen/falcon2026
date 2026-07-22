@@ -134,9 +134,10 @@
 }
 
 .devkamal-stat-item h3 {
-  font-size: 28px;
-  color: #4b7342;
-  margin: 0;
+    font-size: 30px;
+    color: #4b7342;
+    margin: 0;
+    font-weight: bold;
 }
 
 .devkamal-stat-item p {
@@ -264,7 +265,8 @@
 .devkamal-form-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: #fff; padding: 30px; border: 1px solid #eee; }
 .contact-box { background: #f9f9f9; padding: 15px; margin-bottom: 10px; border: 1px solid #eee; }
 .devkamal-inquiry-form input, .devkamal-inquiry-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; }
-.devkamal-inquiry-form button { width: 100%; padding: 12px; background: #4b7342; color: #fff; border: none; font-weight: bold; }
+.devkamal-inquiry-form button { width: 100%; padding: 12px; background: #4b7342; color: #fff; border: none; font-weight: bold; font-size: 20px;
+    border-radius: 15px;}
 
 @media (max-width: 768px) {
   .devkamal-form-section { grid-template-columns: 1fr; }

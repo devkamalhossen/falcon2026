@@ -287,7 +287,7 @@
         </section>
 
         <section class="devkamal-gallery-wrapper">
-            <h2 class="devkamal-gallery-title">PROJECT GALLERY — BEFORE & AFTER</h2>
+            <h2 class="devkamal-gallery-title text-[22px] font-semibold text-gray-800">PROJECT GALLERY — BEFORE & AFTER</h2>
             
             <div class="devkamal-gallery-grid">
                 <!-- Item 1 -->
@@ -437,7 +437,7 @@
     <section class="devkamal-contact-main-wrapper">
         <div class="devkamal-info-bar">
             <div class="devkamal-info-text">
-            <h4>Still have a question we haven't answered?</h4>
+            <h4 class="text-[22px] font-semibold text-gray-800">Still have a question we haven't answered?</h4>
             <p>Get a straight answer on PU flooring cost, timeline, or suitability for your site — talk to our team directly.</p>
             </div>
             <div class="devkamal-info-btns">
@@ -447,8 +447,8 @@
         </div>
         <div class="devkamal-form-section">
             <div class="devkamal-contact-details">
-            <small>PREFER TO TALK NOW?</small>
-            <h2>Reach Our Flooring Team Directly</h2>
+            <small class="text-[22px] font-semibold text-gray-800">PREFER TO TALK NOW?</small>
+            <h2 style="margin-top: 15px" class="font-semibold">Reach Our Flooring Team Directly</h2>
             <p>Usually faster than the form — most calls get an answer the same day.</p>
             
             <div class="contact-box">Call us: 01329-742200</div>
@@ -456,8 +456,8 @@
             </div>
 
             <div class="devkamal-inquiry-form">
-            <h3>INTERESTED?</h3>
-            <p>Get In Touch</p>
+            <h3 class="text-[22px] font-semibold text-gray-800">INTERESTED?</h3>
+            <p style="margin-top: 15px">Get In Touch</p>
               <form id="contactForm" method="POST" class="space-y-6" action="<?php echo e(route('contact.form.submit')); ?>">
                     <?php echo csrf_field(); ?>
                     <input type="hidden" name="service_id" value="<?php echo e($data['service']->id); ?>">
